@@ -1,2 +1,2 @@
 # R-codes
-R for Data Science
+Machine learning codes in R
