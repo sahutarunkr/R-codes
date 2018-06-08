@@ -1,0 +1,18 @@
+iris.data=iris
+levels(iris.data)
+levels(iris.data$Species)
+levels(iris.data$Species)=c(1,2,3)
+levels(iris.data$Species)=c(1,2,3)
+levels(iris.data$Species)
+
+fit<-rpart(Species ~.,method="class",data=iris.data)
+printcp(fit) # display the results plotcp(fit) # visualize cross-validation results summary(fit) # detailed summary of splits
+fit<-rpart(Species ~.,method="class",data=iris.data,control=rpart.control(minsplit=3, cp=0.001))
+printcp(fit) # display the results plotcp(fit) # visualize cross-validation results summary(fit) # detailed summary of splits
+plotcp(fit)
+plot(fit)
+
+plot(fit, uniform=TRUE, main="Classification Tree for Kyphosis")
+text(fit, use.n=TRUE, all=TRUE, cex=.8)
+# create attractive postscript plot of tree post(fit, file = "c:/tree.ps",
+title = "Classification Tree for Kyphosis")
