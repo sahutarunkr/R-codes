@@ -1,0 +1,6 @@
+Kaggle competition UMICH SI650. As described there, it is a sentiment classification task. Every document (a line in the data file) is a sentence extracted from social media. The files contain:
+
+    Training data: 7086 lines. Format: 1/0 (tab) sentence
+    Test data: 33052 lines, each contains one sentence.
+
+The data was originally collected from opinmind.com (which is no longer active). 
